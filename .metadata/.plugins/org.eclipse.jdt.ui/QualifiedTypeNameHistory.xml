@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="com.PetShopBAND.petshopBAND.model.PetShopBand_Cliente"/>
+    <fullyQualifiedTypeName name="com.PetShopBAND.petshopBAND.model.PetShopBand_Fornecedor"/>
+    <fullyQualifiedTypeName name="com.PetShopBAND.petshopBAND.model.PetShopBand_Pedido"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.PetShopBAND.petshopBAND.model.PetShopBandCliente"/>
+    <fullyQualifiedTypeName name="com.PetShopBAND.petshopBAND.model.PetShopBandVendas"/>
+    <fullyQualifiedTypeName name="com.PetShopBAND.petshopBAND.model.PetShopBandVendedor"/>
+</qualifiedTypeNameHistroy>
