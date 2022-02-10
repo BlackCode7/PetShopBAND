@@ -1,0 +1,5 @@
+package com.PetShopBAND.petshopBAND.config;
+
+public class SecurityConfig {
+
+}

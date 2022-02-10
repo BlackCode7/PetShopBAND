@@ -1,0 +1,15 @@
+package com.PetShopBAND.petshopBAND;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@SpringBootApplication
+public class PetShopBandApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PetShopBandApplication.class, args);
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.PetShopBAND.petshopBAND.repository;
+
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.PetShopBAND.petshopBAND.model.PetShopBand_Fornecedor;
+
+public interface PetShopBandFornecedorRepository extends JpaRepository<PetShopBand_Fornecedor, UUID>{
+
+}
