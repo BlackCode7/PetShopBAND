@@ -22,3 +22,4 @@ git push -u origin master
 2 - criação das interfaces e das classes de service / repository
 3 - configuração dos campos das entidade para objetos não nulos
 4 - Ajuste do arquivo pom.xml ainda com erro
+5 - config correta do arquivo application.properties - commit >>> a993be6498709d3e41b97ed3a30dcd3e9e1ab592
