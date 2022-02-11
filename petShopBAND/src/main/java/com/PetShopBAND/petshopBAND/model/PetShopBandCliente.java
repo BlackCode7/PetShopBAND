@@ -1,7 +1,6 @@
 package com.PetShopBAND.petshopBAND.model;
 
 import java.io.Serializable;
-import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -32,7 +31,7 @@ public class PetShopBandCliente implements Serializable{
 	@Id
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private UUID id;
+	private Integer id;
 	
 	@Column(name="nome_cliente", nullable = false, length = 50)
 	private String nomeCliente;
