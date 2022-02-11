@@ -23,3 +23,6 @@ git push -u origin master
 3 - configuração dos campos das entidade para objetos não nulos
 4 - Ajuste do arquivo pom.xml ainda com erro
 5 - config correta do arquivo application.properties - commit >>> a993be6498709d3e41b97ed3a30dcd3e9e1ab592
+6 - criando classe PopulationBancPetShopBandInitial para popular o banco automaticamente usando o PetShopBandClienteRepository e a classe PetShopBandCliente
+7 - implementando a classe controller
+8 - criando um método para listar pessoas na classe PetShopBandClienteController
