@@ -1,7 +1,6 @@
 package com.PetShopBAND.petshopBAND.model;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -25,28 +24,28 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@Table(name="PetShopBandFornecedor")
+@Table(name="TB_Fornecedor")
 public class PetShopBandFornecedor implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="id")
+	@Column(name="idforn")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private UUID idFornec;
+	private UUID idForn;
 	
-	@Column(name="nome_fornec", nullable = false, length = 50)
+	@Column(name="nomeforn", nullable = false, length = 50)
 	private String nomeFornec;
 	
-	@Column(name="telef_fornec", nullable = false, length = 20)
+	@Column(name="telefforn", nullable = false, length = 20)
 	private String telefFornec;
 	
-	@Column(name="email_fornec", nullable = false, length = 50)
+	@Column(name="emailforn", nullable = false, length = 50)
 	private String emailFornec;
 	
-	@Column(name="cnpj_fornec", nullable = false, length = 50)
-	private Integer cnpjFornec;
+	@Column(name="cnpjforn", nullable = false, length = 50)
+	private Long cnpjFornec;
 	
-	@Column(name="data_cadastro_fornec", nullable = false, length = 10)
-	private Date dataCadastroFornec;
+	@Column(name="dataforn", nullable = false)	
+	private String  dataFornec;
 }

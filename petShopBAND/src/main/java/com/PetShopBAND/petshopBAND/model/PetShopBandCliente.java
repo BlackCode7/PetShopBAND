@@ -23,26 +23,26 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@Table(name="PetShopBandCliente ")
+@Table(name="TB_Cliente")
 public class PetShopBandCliente implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="id")
+	@Column(name="idcli")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	@Column(name="nome_cliente", nullable = false, length = 50)
-	private String nomeCliente;
+	@Column(name="nomecli", nullable = false, length = 50)
+	private String nome;
 	
-	@Column(name="cliente_endereco", nullable = false, length = 200)
+	@Column(name="enderecocli", nullable = false, length = 200)
 	private String endereco;
 	
-	@Column(name="cliente_email", nullable = false, length = 50)
+	@Column(name="emailcli", nullable = false, length = 50)
 	private String email;
 	
-	@Column(name="cliente_telefone", nullable = false, length = 50)
+	@Column(name="telefonecli", nullable = false, length = 50)
 	private String telefone;
 
 }

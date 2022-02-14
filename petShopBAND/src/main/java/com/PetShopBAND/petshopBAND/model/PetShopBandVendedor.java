@@ -25,22 +25,19 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@Table(name="PetShopBandVendedor")
+@Table(name="TB_Vendedor")
 public class PetShopBandVendedor implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="id")
+	@Column(name="idvendedor")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID idVendedor;
 	
-	@Column(name="nome_vendedor", nullable = false, length = 50)
+	@Column(name="nomevendedor", nullable = false, length = 50)
 	private String nomeVendedor; //relacionar com tabela de vendedores
-	
-	@Column(name="soma_deVendas", nullable = false)
-	private String somaVendasDoVendedor;//relacionar com tabela de vendas
-	
-	@Column(name="data_venda", nullable = false, length = 10)
-	private Date dataVenda;
+		
+	/* Relacionar com data de venda da tabela vendas */
+	/* Relacionar com o nome do produto da tabela produto */
 }
