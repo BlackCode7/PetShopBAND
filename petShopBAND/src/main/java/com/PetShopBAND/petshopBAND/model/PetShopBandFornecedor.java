@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
@@ -53,6 +54,10 @@ public class PetShopBandFornecedor implements Serializable{
 	private String  dataFornec;
 	
 	@ManyToMany
+	@JoinColumn(name="idprod")
+	private PetShopBandProduto petShopBandProduto;
+	
 	@Builder.Default
-	private List<PetShopBandProduto> petShopBandProduto = new ArrayList<>();
+	//@ManyToMany(mappedBy = "PetShopBandProduto", targetEntity = PetShopBandProduto.class)
+	private List<PetShopBandProduto> petShopBandProdutoList = new ArrayList<>();
 }

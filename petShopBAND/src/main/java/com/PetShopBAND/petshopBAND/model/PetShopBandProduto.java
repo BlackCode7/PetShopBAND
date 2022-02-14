@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
@@ -57,7 +58,11 @@ public class PetShopBandProduto implements Serializable{
 	private Double valorVendaProduto;
 	
 	@ManyToMany
+	@JoinColumn(name="idforn")
+	private PetShopBandFornecedor petShopBandFornecedorList1;	
+	
 	@Builder.Default
-	private List<PetShopBandFornecedor> petShopBandFornecedor = new ArrayList<>();	
+	//@ManyToMany(mappedBy = "PetShopBandFornecedor", targetEntity = PetShopBandFornecedor.class)
+	private List<PetShopBandFornecedor> petShopBandFornecedorList = new ArrayList<>();	
 
 }
