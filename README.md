@@ -18,7 +18,23 @@ git branch -M master
 git push -u origin master
 
 # Tarefas realizadas na aplicação
+
 1 - criação dos pacotes service / controller / repository
+
 2 - criação das interfaces e das classes de service / repository
+
 3 - configuração dos campos das entidade para objetos não nulos
+
 4 - Ajuste do arquivo pom.xml ainda com erro
+
+5 - config correta do arquivo application.properties - commit >>> a993be6498709d3e41b97ed3a30dcd3e9e1ab592
+
+6 - criando classe PopulationBancPetShopBandInitial para popular o banco automaticamente usando o PetShopBandClienteRepository e a classe PetShopBandCliente
+
+7 - implementando a classe controller
+
+8 - criando um método para listar pessoas na classe PetShopBandClienteController
+
+9 -  criação de script para o banco de dados postgresql - ESTÁ COM PROBLEMA PARA PERSISTIR OS DADOS
+
+10 - criação de script para o banco de dados postgresql - ERRO ajustado com a normatização dos nomes das tabelas o dos campos
