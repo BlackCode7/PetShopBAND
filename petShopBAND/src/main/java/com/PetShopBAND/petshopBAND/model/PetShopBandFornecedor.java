@@ -1,6 +1,8 @@
 package com.PetShopBAND.petshopBAND.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -8,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -48,4 +51,8 @@ public class PetShopBandFornecedor implements Serializable{
 	
 	@Column(name="dataforn", nullable = false)	
 	private String  dataFornec;
+	
+	@ManyToMany
+	@Builder.Default
+	private List<PetShopBandProduto> petShopBandProduto = new ArrayList<>();
 }
