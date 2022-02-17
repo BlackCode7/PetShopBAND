@@ -40,3 +40,6 @@ git push -u origin master
 10 - criação de script para o banco de dados postgresql - ERRO ajustado com a normatização dos nomes das tabelas o dos campos
 
 11 - Entendendo o relacionamento entre classes usando o lombok
+
+12 - data 17/02/2022 >>> desmotivado para programar
+
