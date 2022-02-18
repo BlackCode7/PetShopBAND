@@ -12,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -20,11 +21,13 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Getter
 @Setter
-@Builder
+@Builder 
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
@@ -53,11 +56,12 @@ public class PetShopBandFornecedor implements Serializable{
 	@Column(name="dataforn", nullable = false)	
 	private String  dataFornec;
 	
-	@ManyToMany
-	@JoinColumn(name="idprod")
-	private PetShopBandProduto petShopBandProduto;
+	//@ManyToOne
+	//@Builder.Default
+	//@JoinColumn(name="idprod")
+	//private PetShopBandProduto petShopBandProdutoList;
 	
-	@Builder.Default
+	//@Builder.Default
 	//@ManyToMany(mappedBy = "PetShopBandProduto", targetEntity = PetShopBandProduto.class)
-	private List<PetShopBandProduto> petShopBandProdutoList = new ArrayList<>();
+	//private List<PetShopBandProduto> petShopBandProdutoList = new ArrayList<>();
 }
