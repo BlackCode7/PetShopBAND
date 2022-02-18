@@ -38,3 +38,17 @@ git push -u origin master
 9 -  criação de script para o banco de dados postgresql - ESTÁ COM PROBLEMA PARA PERSISTIR OS DADOS
 
 10 - criação de script para o banco de dados postgresql - ERRO ajustado com a normatização dos nomes das tabelas o dos campos
+
+11 - Entendendo o relacionamento entre classes usando o lombok
+
+12 - data 17/02/2022 >>> desmotivado para programar
+
+13 - Erro Data 18/02/2021
+      @CollectionTable
+	    @JoinColumn(name="idprod")
+	    private PetShopBandProduto petShopBandProdutoList;
+      
+      Código replicado na entidade aparentemente funcionou, mas precisa de mais investigação
+      
+      
+
