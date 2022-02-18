@@ -43,3 +43,12 @@ git push -u origin master
 
 12 - data 17/02/2022 >>> desmotivado para programar
 
+13 - Erro Data 18/02/2021
+      @CollectionTable
+	    @JoinColumn(name="idprod")
+	    private PetShopBandProduto petShopBandProdutoList;
+      
+      Código replicado na entidade aparentemente funcionou, mas precisa de mais investigação
+      
+      
+
