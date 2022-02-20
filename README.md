@@ -51,6 +51,9 @@ git push -u origin master
       Código replicado na entidade aparentemente funcionou, mas precisa de mais investigação
 
 14 - data 19/02/2022 >>> Sem programação
+
+15 - ERRO - data 20/02/2022
+	org.hibernate.cfg.NotYetImplementedException: Collections having FK in secondary table
       
       
 
