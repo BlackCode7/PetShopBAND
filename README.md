@@ -49,6 +49,8 @@ git push -u origin master
 	    private PetShopBandProduto petShopBandProdutoList;
       
       Código replicado na entidade aparentemente funcionou, mas precisa de mais investigação
+
+14 - data 19/02/2022 >>> Sem programação
       
       
 
