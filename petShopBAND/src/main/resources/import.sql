@@ -10,9 +10,9 @@ insert into TB_Produto(idprod,nomeprod, nomefabrprod, datavalidprod, descricaopr
 insert into TB_Produto(idprod,nomeprod, nomefabrprod, datavalidprod, descricaoprod, valorcustoprod, valorvendaprod) values(1, 'NomeProduto1', 'NomeFabricante1', '2021-05-07', 'Descrição do produto 1', 25.0, 123.10);
 insert into TB_Produto(idprod,nomeprod, nomefabrprod, datavalidprod, descricaoprod, valorcustoprod, valorvendaprod) values(2, 'NomeProduto2', 'NomeFabricante2', '2021-06-10', 'Descrição do produto 2', 30.0, 145.03);
 
-insert into TB_Pedido(idped, numeroped, dataped, nomeclienteped, nomevendedorped) values(0, 5, '2021-07-12', 'Anderson0', 'VendedorAnderson0');
-insert into TB_Pedido(idped, numeroped, dataped, nomeclienteped, nomevendedorped) values(1, 1, '2021-07-12', 'Anderson1', 'VendedorAnderson1');
-insert into TB_Pedido(idped, numeroped, dataped, nomeclienteped, nomevendedorped) values(2, 12, '2021-07-12', 'Anderson2', 'VendedorAnderson2');
+insert into TB_Pedido(idped, numeroped, dataped) values(0, 5, '2021-07-12');
+insert into TB_Pedido(idped, numeroped, dataped) values(1, 1, '2021-07-12');
+insert into TB_Pedido(idped, numeroped, dataped) values(2, 12, '2021-07-12');
 
 insert into TB_Venda(idvenda, datavenda) values(0, '2022-01-02');
 insert into TB_Venda(idvenda, datavenda) values(1, '2022-01-03');

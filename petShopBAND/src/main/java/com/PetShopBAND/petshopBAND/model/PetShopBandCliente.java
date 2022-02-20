@@ -1,28 +1,29 @@
 package com.PetShopBAND.petshopBAND.model;
 
 import java.io.Serializable;
+import java.util.List;
 
-import javax.persistence.CollectionTable;
+import javax.persistence.CascadeType;
+//import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import lombok.AllArgsConstructor;
-import lombok.Builder;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Getter
-@Setter
-@Builder
+@Data
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,24 +34,31 @@ public class PetShopBandCliente implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="idcli")
+	@Type(type = "uuid-char")
+	@Column(name="idcli", nullable = false, unique = true)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	@Column(name="nomecli", nullable = false, length = 50)
+	@Column(name="nomecli", nullable = false, length = 200)
 	private String nome;
 	
 	@Column(name="enderecocli", nullable = false, length = 200)
 	private String endereco;
 	
-	@Column(name="emailcli", nullable = false, length = 50)
+	@Column(name="emailcli", nullable = false, length = 200)
 	private String email;
 	
 	@Column(name="telefonecli", nullable = false, length = 50)
 	private String telefone;
 	
-	@CollectionTable
-	@JoinColumn(name="idprod")
-	private PetShopBandProduto petShopBandProdutoList;
+	//Tabela Pedidos
+	@OneToMany(targetEntity = PetShopBandPedido.class, cascade=CascadeType.ALL)
+	@JoinColumn(name="idped", referencedColumnName = "idcli")
+	private List<PetShopBandPedido> petShopBandPedido;
+	
+	//Tabela produto
+	@OneToMany(cascade=CascadeType.ALL)
+	@JoinColumn(name="idprod", table="TB_Produto")
+	private List<PetShopBandProduto> petShopBandProdutoList;
 
 }

@@ -1,8 +1,9 @@
 package com.PetShopBAND.petshopBAND.model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -11,9 +12,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+//import javax.persistence.JoinColumn;
+//import javax.persistence.ManyToMany;
+//import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Type;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -37,17 +42,18 @@ public class PetShopBandFornecedor implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Column(name="idforn")
+	@Type(type = "uuid-char")
+	@Column(name="idforn", nullable = false, unique = true)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID idForn;
 	
-	@Column(name="nomeforn", nullable = false, length = 50)
+	@Column(name="nomeforn", nullable = false, length = 200)
 	private String nomeFornec;
 	
-	@Column(name="telefforn", nullable = false, length = 20)
+	@Column(name="telefforn", nullable = false, length = 200)
 	private String telefFornec;
 	
-	@Column(name="emailforn", nullable = false, length = 50)
+	@Column(name="emailforn", nullable = false, length = 200)
 	private String emailFornec;
 	
 	@Column(name="cnpjforn", nullable = false, length = 50)
@@ -55,6 +61,12 @@ public class PetShopBandFornecedor implements Serializable{
 	
 	@Column(name="dataforn", nullable = false)	
 	private String  dataFornec;
+	
+	@OneToMany
+	//@Builder.Default
+	@JoinColumn(name="nomeprod")
+	private List<PetShopBandProduto> petShopBandProduto;
+	
 	
 	//@ManyToOne
 	//@Builder.Default

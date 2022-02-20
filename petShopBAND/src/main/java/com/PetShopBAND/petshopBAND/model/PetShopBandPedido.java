@@ -6,23 +6,23 @@ import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Type;
+
 import lombok.AllArgsConstructor;
-import lombok.Builder;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Getter
-@Setter
-@Builder
+@Data
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,7 +33,8 @@ public class PetShopBandPedido implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name="idped")
+	@Type(type = "uuid-char")
+	@Column(name="idped", nullable = false, unique = true)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID idPed;
 	
@@ -41,13 +42,25 @@ public class PetShopBandPedido implements Serializable {
 	private Integer itemPed;
 	
 	@Column(name="dataped", nullable = false)
-	private Date dataPed; 
+	private Date dataPed; 	
 	
-	@Column(name="nomeclienteped", nullable = false)
-	private String nomeClientePed;//relacionar com o nome do cliente na tabela cliente
+	// Tabela produto
+	//@OneToMany
+	@ManyToOne(fetch=FetchType.LAZY)	
+	private PetShopBandProduto petShopBandProduto;
 	
-	@Column(name="nomevendedorped", nullable = false)
-	private String nomeVendedorPed;//relacionar com o nome do vendedor na tabela vendedor
+	// Tabela Clientes
+	//@OneToMany
+	@ManyToOne(fetch=FetchType.LAZY)
+	private PetShopBandCliente petShopBandCliente;
+	
+	
+	
+//	@Column(name="nomeclienteped", nullable = false)
+//	private String nomeClientePed;//relacionar com o nome do cliente na tabela cliente
+//	
+//	@Column(name="nomevendedorped", nullable = false)
+//	private String nomeVendedorPed;//relacionar com o nome do vendedor na tabela vendedor
 
 
 }

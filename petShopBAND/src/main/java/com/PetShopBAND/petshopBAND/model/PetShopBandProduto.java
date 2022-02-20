@@ -2,17 +2,22 @@ package com.PetShopBAND.petshopBAND.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
+//import java.util.List;
 import java.util.UUID;
 
-import javax.persistence.CollectionTable;
+//import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+//import javax.persistence.JoinColumn;
+//import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Type;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -34,14 +39,15 @@ public class PetShopBandProduto implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(name="idprod")
+	@Type(type = "uuid-char")
+	@Column(name="idprod", nullable = false, unique = true)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private UUID idProd;
 	
-	@Column(name="nomeprod", nullable = false, length = 50)
+	@Column(name="nomeprod", nullable = false, length = 200)//, nullable = false, length = 50
 	private String nomeProd;
 	
-	@Column(name="nomefabrprod", nullable = true, length = 50)
+	@Column(name="nomefabrprod", nullable = true, length = 200)
 	private String fabricanteProd;
 	
 	@Column(name="datavalidprod", nullable = false)
@@ -56,9 +62,15 @@ public class PetShopBandProduto implements Serializable{
 	@Column(name="valorvendaprod", nullable = true)
 	private Double valorVendaProduto;
 	
-	@CollectionTable
-	@JoinColumn(name="idcli")
-	private PetShopBandCliente petShopBandClienteList;	
+	/* Relacionamento das classes */
+	@ManyToOne
+	private PetShopBandPedido PetShopBandPedido;
+	
+	@ManyToOne
+	private PetShopBandFornecedor petShopBandFornecedor;	
+	
+	@ManyToOne
+	private PetShopBandCliente petShopBandCliente;
 	
 	//@Builder.Default
 	//@ManyToMany(mappedBy = "PetShopBandFornecedor", targetEntity = PetShopBandFornecedor.class)
