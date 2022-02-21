@@ -49,6 +49,14 @@ git push -u origin master
 	    private PetShopBandProduto petShopBandProdutoList;
       
       Código replicado na entidade aparentemente funcionou, mas precisa de mais investigação
+
+14 - data 19/02/2022 >>> Sem programação
+
+15 - ERRO - data 20/02/2022
+	org.hibernate.cfg.NotYetImplementedException: Collections having FK in secondary table
+	
+16 - Refazendo as classes do modo tradicional sem lombok >>> https://cursos.alura.com.br/course/spring-boot-api-rest/task/55819
+     Link do tutorial para referência
       
       
 
