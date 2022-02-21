@@ -5,15 +5,6 @@ import java.util.stream.Collectors;
 
 import com.PetShopBAND.petshopBAND.model.PetShopBandCliente;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-
-@Getter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
 public class PetShopBandClienteDto {
 
 	private Integer id;
@@ -29,10 +20,24 @@ public class PetShopBandClienteDto {
 		this.email = petShopBandCliente.getEmail();
 		this.telefone = petShopBandCliente.getTelefone();
 	}
-
-	//Methodo for convert in PetShopBandClienteDto
-	public static Object converte(List<PetShopBandCliente> petShopBandCliente) {
-		return petShopBandCliente.stream().map(PetShopBandClienteDto::new).collect(Collectors.toList());
-	}
 	
+	public Integer getId() {
+		return id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public String getEndereco() {
+		return endereco;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public static List<PetShopBandClienteDto> converter(List<PetShopBandCliente> clientes) {
+		return clientes.stream().map(PetShopBandClienteDto::new).collect(Collectors.toList());
+	}
 }

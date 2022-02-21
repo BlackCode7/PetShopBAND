@@ -11,10 +11,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+//import javax.persistence.ManyToMany;
 //import javax.persistence.JoinColumn;
 //import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
+//import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Type;
@@ -63,14 +63,14 @@ public class PetShopBandProduto implements Serializable{
 	private Double valorVendaProduto;
 	
 	/* Relacionamento das classes */
-	@ManyToOne
-	private PetShopBandPedido PetShopBandPedido;
+//	@ManyToOne
+//	private PetShopBandPedido PetShopBandPedido;
 	
-	@ManyToOne
-	private PetShopBandFornecedor petShopBandFornecedor;	
-	
-	@ManyToOne
-	private PetShopBandCliente petShopBandCliente;
+//	@ManyToOne
+//	private PetShopBandFornecedor petShopBandFornecedor;	
+//	
+//	@ManyToOne
+//	private PetShopBandCliente petShopBandCliente;
 	
 	//@Builder.Default
 	//@ManyToMany(mappedBy = "PetShopBandFornecedor", targetEntity = PetShopBandFornecedor.class)
