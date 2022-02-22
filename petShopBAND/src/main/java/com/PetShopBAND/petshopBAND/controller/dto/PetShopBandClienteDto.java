@@ -37,6 +37,7 @@ public class PetShopBandClienteDto {
 		return telefone;
 	}
 
+	// Method
 	public static List<PetShopBandClienteDto> converter(List<PetShopBandCliente> clientes) {
 		return clientes.stream().map(PetShopBandClienteDto::new).collect(Collectors.toList());
 	}
