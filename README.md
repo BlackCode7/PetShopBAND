@@ -60,6 +60,8 @@ git push -u origin master
      
 17 - Refatorando as classes de modelos, controllers e Dto >>> fornecedores / pedidos / produtos/ vendas / vendedores
      commit >>> 6b47d34..4aa5f91
+     
+18 - data 24-02-2022 >>> Sem desenvolvimento
       
       
 
