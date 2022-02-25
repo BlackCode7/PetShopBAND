@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.PetShopBAND.petshopBAND.model.PetShopBandProduto;
 
+
 @Repository
 public interface PetShopBandProdutoRepository extends JpaRepository<PetShopBandProduto, UUID>{
 

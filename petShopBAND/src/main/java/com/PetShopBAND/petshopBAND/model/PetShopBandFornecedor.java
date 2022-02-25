@@ -1,24 +1,33 @@
 package com.PetShopBAND.petshopBAND.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
 public class PetShopBandFornecedor{
 	
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private UUID idForn;
 	private String nomeFornec;
 	private String telefFornec;
 	private String emailFornec;
 	private Long cnpjFornec;
 	private String  dataFornec;
-	public PetShopBandFornecedor(UUID idForn, String nomeFornec, String telefFornec, String emailFornec,
-			Long cnpjFornec, String dataFornec) {
-		this.idForn = idForn;
-		this.nomeFornec = nomeFornec;
-		this.telefFornec = telefFornec;
-		this.emailFornec = emailFornec;
-		this.cnpjFornec = cnpjFornec;
-		this.dataFornec = dataFornec;
+		
+	@OneToMany
+	private List<PetShopBandProduto> petShopBandProduto = new ArrayList<PetShopBandProduto>();		
+		
+	public PetShopBandFornecedor() {
+		super();
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

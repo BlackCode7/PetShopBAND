@@ -3,9 +3,16 @@ package com.PetShopBAND.petshopBAND.model;
 import java.util.Date;
 import java.util.UUID;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+@Entity
 public class PetShopBandProduto{
 	
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private UUID idProd;
 	private String nomeProd;
 	private String fabricanteProd;
@@ -14,16 +21,11 @@ public class PetShopBandProduto{
 	private Double valorCustoProduto;
 	private Double valorVendaProduto;
 	
-	public PetShopBandProduto(UUID idProd, String nomeProd, String fabricanteProd, Date dataValProd,
-			String descricaoProduto, Double valorCustoProduto, Double valorVendaProduto) {
+	@ManyToOne
+	private PetShopBandFornecedor petShopBandFornecedor;
+		
+	public PetShopBandProduto() {
 		super();
-		this.idProd = idProd;
-		this.nomeProd = nomeProd;
-		this.fabricanteProd = fabricanteProd;
-		this.dataValProd = dataValProd;
-		this.descricaoProduto = descricaoProduto;
-		this.valorCustoProduto = valorCustoProduto;
-		this.valorVendaProduto = valorVendaProduto;
 	}
 
 	@Override

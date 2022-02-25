@@ -3,12 +3,19 @@ package com.PetShopBAND.petshopBAND.model;
 import java.util.Date;
 import java.util.UUID;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class PetShopBandVendas{
 
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private UUID idVenda;
 	private Date dataVenda;
+	
 	public PetShopBandVendas(UUID idVenda, Date dataVenda) {
-		super();
 		this.idVenda = idVenda;
 		this.dataVenda = dataVenda;
 	}

@@ -2,10 +2,18 @@ package com.PetShopBAND.petshopBAND.model;
 
 import java.util.UUID;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class PetShopBandVendedor{
 
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private UUID idVendedor;
 	private String nomeVendedor;
+	
 	public PetShopBandVendedor(UUID idVendedor, String nomeVendedor) {
 		super();
 		this.idVendedor = idVendedor;
