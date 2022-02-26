@@ -65,5 +65,5 @@ git push -u origin master
 
 19 - Finalmente descobri o erro de conecção com o banco H2 do spring referência >>> https://www.youtube.com/watch?v=dlNu7rB7emQ
       
-      
+20 - data 26-02-2022 >>> Sem desenvolvimento
 
