@@ -7,142 +7,90 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="tb_produto")
 public class PetShopBandProduto{
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private UUID idProd;
-	private String nomeProd;
-	private String fabricanteProd;
-	private Date dataValProd;
-	private String descricaoProduto;
-	private Double valorCustoProduto;
-	private Double valorVendaProduto;
+	private UUID idprod;
+	private String nomeprod;
+	private String fabricanteprod;
+	private Date datavalprod;
+	private String descricaoproduto;
+	private Double valorcustoproduto;
+	private Double valorvendaproduto;
 	
 	@ManyToOne
+	@JoinColumn(name="id_forn")
 	private PetShopBandFornecedor petShopBandFornecedor;
-		
+	
+	@ManyToOne
+	@JoinColumn(name="id_cli")
+	private PetShopBandCliente petShopBandCliente;
+			
 	public PetShopBandProduto() {
 		super();
 	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((dataValProd == null) ? 0 : dataValProd.hashCode());
-		result = prime * result + ((descricaoProduto == null) ? 0 : descricaoProduto.hashCode());
-		result = prime * result + ((fabricanteProd == null) ? 0 : fabricanteProd.hashCode());
-		result = prime * result + ((idProd == null) ? 0 : idProd.hashCode());
-		result = prime * result + ((nomeProd == null) ? 0 : nomeProd.hashCode());
-		result = prime * result + ((valorCustoProduto == null) ? 0 : valorCustoProduto.hashCode());
-		result = prime * result + ((valorVendaProduto == null) ? 0 : valorVendaProduto.hashCode());
-		return result;
+	
+	public UUID getidprod() {
+		return idprod;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		PetShopBandProduto other = (PetShopBandProduto) obj;
-		if (dataValProd == null) {
-			if (other.dataValProd != null)
-				return false;
-		} else if (!dataValProd.equals(other.dataValProd))
-			return false;
-		if (descricaoProduto == null) {
-			if (other.descricaoProduto != null)
-				return false;
-		} else if (!descricaoProduto.equals(other.descricaoProduto))
-			return false;
-		if (fabricanteProd == null) {
-			if (other.fabricanteProd != null)
-				return false;
-		} else if (!fabricanteProd.equals(other.fabricanteProd))
-			return false;
-		if (idProd == null) {
-			if (other.idProd != null)
-				return false;
-		} else if (!idProd.equals(other.idProd))
-			return false;
-		if (nomeProd == null) {
-			if (other.nomeProd != null)
-				return false;
-		} else if (!nomeProd.equals(other.nomeProd))
-			return false;
-		if (valorCustoProduto == null) {
-			if (other.valorCustoProduto != null)
-				return false;
-		} else if (!valorCustoProduto.equals(other.valorCustoProduto))
-			return false;
-		if (valorVendaProduto == null) {
-			if (other.valorVendaProduto != null)
-				return false;
-		} else if (!valorVendaProduto.equals(other.valorVendaProduto))
-			return false;
-		return true;
+	public void setidprod(UUID idprod) {
+		this.idprod = idprod;
 	}
 
-	public UUID getIdProd() {
-		return idProd;
+	public String getnomeprod() {
+		return nomeprod;
 	}
 
-	public void setIdProd(UUID idProd) {
-		this.idProd = idProd;
+	public void setnomeprod(String nomeprod) {
+		this.nomeprod = nomeprod;
 	}
 
-	public String getNomeProd() {
-		return nomeProd;
+	public String getfabricanteprod() {
+		return fabricanteprod;
 	}
 
-	public void setNomeProd(String nomeProd) {
-		this.nomeProd = nomeProd;
+	public void setfabricanteprod(String fabricanteprod) {
+		this.fabricanteprod = fabricanteprod;
 	}
 
-	public String getFabricanteProd() {
-		return fabricanteProd;
+	public Date getdatavalprod() {
+		return datavalprod;
 	}
 
-	public void setFabricanteProd(String fabricanteProd) {
-		this.fabricanteProd = fabricanteProd;
+	public void setdatavalprod(Date datavalprod) {
+		this.datavalprod = datavalprod;
 	}
 
-	public Date getDataValProd() {
-		return dataValProd;
+	public String getdescricaoproduto() {
+		return descricaoproduto;
 	}
 
-	public void setDataValProd(Date dataValProd) {
-		this.dataValProd = dataValProd;
+	public void setdescricaoproduto(String descricaoproduto) {
+		this.descricaoproduto = descricaoproduto;
 	}
 
-	public String getDescricaoProduto() {
-		return descricaoProduto;
+	public Double getvalorcustoproduto() {
+		return valorcustoproduto;
 	}
 
-	public void setDescricaoProduto(String descricaoProduto) {
-		this.descricaoProduto = descricaoProduto;
+	public void setvalorcustoproduto(Double valorcustoproduto) {
+		this.valorcustoproduto = valorcustoproduto;
 	}
 
-	public Double getValorCustoProduto() {
-		return valorCustoProduto;
+	public Double getvalorvendaproduto() {
+		return valorvendaproduto;
 	}
 
-	public void setValorCustoProduto(Double valorCustoProduto) {
-		this.valorCustoProduto = valorCustoProduto;
-	}
-
-	public Double getValorVendaProduto() {
-		return valorVendaProduto;
-	}
-
-	public void setValorVendaProduto(Double valorVendaProduto) {
-		this.valorVendaProduto = valorVendaProduto;
+	public void setvalorvendaproduto(Double valorvendaproduto) {
+		this.valorvendaproduto = valorvendaproduto;
 	}	
 	
 }

@@ -17,11 +17,11 @@ public class PetShopBandFornecedorDto{
 	
 	public PetShopBandFornecedorDto(PetShopBandFornecedor petShopBandFornecedor) {
 		this.idForn = petShopBandFornecedor.getIdForn();
-		this.nomeFornec = petShopBandFornecedor.getNomeFornec();
-		this.telefFornec = petShopBandFornecedor.getTelefFornec();
-		this.emailFornec = petShopBandFornecedor.getEmailFornec();
-		this.cnpjFornec = petShopBandFornecedor.getCnpjFornec();
-		this.dataFornec = petShopBandFornecedor.getDataFornec();
+		this.nomeFornec = petShopBandFornecedor.getnomefornec();
+		this.telefFornec = petShopBandFornecedor.getteleffornec();
+		this.emailFornec = petShopBandFornecedor.getemailfornec();
+		this.cnpjFornec = petShopBandFornecedor.getcnpjfornec();
+		this.dataFornec = petShopBandFornecedor.getdatafornec();
 	}
 	public UUID getIdForn() {
 		return idForn;

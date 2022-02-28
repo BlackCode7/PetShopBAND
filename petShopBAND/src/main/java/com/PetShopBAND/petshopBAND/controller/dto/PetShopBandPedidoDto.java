@@ -14,9 +14,9 @@ public class PetShopBandPedidoDto {
 	private Date dataPed; 
 	
 	public PetShopBandPedidoDto(PetShopBandPedido petShopBandPedido) {
-		this.idPed = petShopBandPedido.getIdPed();
-		this.itemPed = petShopBandPedido.getItemPed();
-		this.dataPed = petShopBandPedido.getDataPed();
+		this.idPed = petShopBandPedido.getidped();
+		this.itemPed = petShopBandPedido.getitemped();
+		this.dataPed = petShopBandPedido.getdataped();
 	}
 
 	public UUID getIdPed() {

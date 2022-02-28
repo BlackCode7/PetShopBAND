@@ -13,8 +13,8 @@ public class PetShopBandVendedoresDto {
 	
 	public PetShopBandVendedoresDto(PetShopBandVendedor vendedor) {
 		super();
-		this.idVendedor = vendedor.getIdVendedor();
-		this.nomeVendedor = vendedor.getNomeVendedor();
+		this.idVendedor = vendedor.getidvendedor();
+		this.nomeVendedor = vendedor.getnomevendedor();
 	}
 
 	public UUID getIdVendedor() {

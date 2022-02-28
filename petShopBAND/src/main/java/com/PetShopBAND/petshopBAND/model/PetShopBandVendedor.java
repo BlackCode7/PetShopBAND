@@ -6,59 +6,34 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="tb_vendedor")
 public class PetShopBandVendedor{
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private UUID idVendedor;
-	private String nomeVendedor;
+	private UUID idvendedor;
+	private String nomevendedor;	
 	
-	public PetShopBandVendedor(UUID idVendedor, String nomeVendedor) {
+	
+	public PetShopBandVendedor() {
 		super();
-		this.idVendedor = idVendedor;
-		this.nomeVendedor = nomeVendedor;
+	}	
+	
+	public UUID getidvendedor() {
+		return idvendedor;
 	}
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((idVendedor == null) ? 0 : idVendedor.hashCode());
-		result = prime * result + ((nomeVendedor == null) ? 0 : nomeVendedor.hashCode());
-		return result;
+	public void setidvendedor(UUID idvendedor) {
+		this.idvendedor = idvendedor;
 	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		PetShopBandVendedor other = (PetShopBandVendedor) obj;
-		if (idVendedor == null) {
-			if (other.idVendedor != null)
-				return false;
-		} else if (!idVendedor.equals(other.idVendedor))
-			return false;
-		if (nomeVendedor == null) {
-			if (other.nomeVendedor != null)
-				return false;
-		} else if (!nomeVendedor.equals(other.nomeVendedor))
-			return false;
-		return true;
+	public String getnomevendedor() {
+		return nomevendedor;
 	}
-	public UUID getIdVendedor() {
-		return idVendedor;
-	}
-	public void setIdVendedor(UUID idVendedor) {
-		this.idVendedor = idVendedor;
-	}
-	public String getNomeVendedor() {
-		return nomeVendedor;
-	}
-	public void setNomeVendedor(String nomeVendedor) {
-		this.nomeVendedor = nomeVendedor;
+	public void setnomevendedor(String nomevendedor) {
+		this.nomevendedor = nomevendedor;
 	}
 	/* Relacionar com data de venda da tabela vendas */
 	/* Relacionar com o nome do produto da tabela produto */

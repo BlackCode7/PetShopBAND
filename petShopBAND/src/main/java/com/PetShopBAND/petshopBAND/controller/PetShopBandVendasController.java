@@ -14,7 +14,7 @@ public class PetShopBandVendasController {
 
 	@RequestMapping("/vendas")
 	public List<PetShopBandVendasDto> lista() {
-		PetShopBandVendas vendas = new PetShopBandVendas(null, null);
+		PetShopBandVendas vendas = new PetShopBandVendas();
 		return PetShopBandVendasDto.converter(Arrays.asList(vendas));
 	}
 }

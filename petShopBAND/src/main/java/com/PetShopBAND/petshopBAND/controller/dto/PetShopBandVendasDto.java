@@ -14,8 +14,8 @@ public class PetShopBandVendasDto {
 	
 	public PetShopBandVendasDto(PetShopBandVendas petShopBandVendas) {
 		super();
-		this.idVenda = petShopBandVendas.getIdVenda();
-		this.dataVenda = petShopBandVendas.getDataVenda();
+		this.idVenda = petShopBandVendas.getidvenda();
+		this.dataVenda = petShopBandVendas.getdatavenda();
 	}
 
 	public UUID getIdVenda() {

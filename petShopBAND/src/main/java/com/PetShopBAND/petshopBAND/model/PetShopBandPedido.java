@@ -7,87 +7,44 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="tb_pedido")
 public class PetShopBandPedido{
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private UUID idPed;
-	private Integer itemPed;
-	private Date dataPed; 	
-	private PetShopBandProduto petShopBandProduto;
+	private UUID idped;
+	private Integer itemped;
+	private Date dataped; 	
 	
-	public PetShopBandPedido(UUID idPed, Integer itemPed, Date dataPed, PetShopBandProduto petShopBandProduto) {
+	@ManyToOne
+	@JoinColumn(name="id_cli")
+	private PetShopBandCliente petShopBandCliente;
+	
+	public PetShopBandPedido() {
 		super();
-		this.idPed = idPed;
-		this.itemPed = itemPed;
-		this.dataPed = dataPed;
-		this.petShopBandProduto = petShopBandProduto;
 	}
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((dataPed == null) ? 0 : dataPed.hashCode());
-		result = prime * result + ((idPed == null) ? 0 : idPed.hashCode());
-		result = prime * result + ((itemPed == null) ? 0 : itemPed.hashCode());
-		result = prime * result + ((petShopBandProduto == null) ? 0 : petShopBandProduto.hashCode());
-		return result;
+	
+	public UUID getidped() {
+		return idped;
 	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		PetShopBandPedido other = (PetShopBandPedido) obj;
-		if (dataPed == null) {
-			if (other.dataPed != null)
-				return false;
-		} else if (!dataPed.equals(other.dataPed))
-			return false;
-		if (idPed == null) {
-			if (other.idPed != null)
-				return false;
-		} else if (!idPed.equals(other.idPed))
-			return false;
-		if (itemPed == null) {
-			if (other.itemPed != null)
-				return false;
-		} else if (!itemPed.equals(other.itemPed))
-			return false;
-		if (petShopBandProduto == null) {
-			if (other.petShopBandProduto != null)
-				return false;
-		} else if (!petShopBandProduto.equals(other.petShopBandProduto))
-			return false;
-		return true;
+	public void setidped(UUID idped) {
+		this.idped = idped;
 	}
-	public UUID getIdPed() {
-		return idPed;
+	public Integer getitemped() {
+		return itemped;
 	}
-	public void setIdPed(UUID idPed) {
-		this.idPed = idPed;
+	public void setitemped(Integer itemped) {
+		this.itemped = itemped;
 	}
-	public Integer getItemPed() {
-		return itemPed;
+	public Date getdataped() {
+		return dataped;
 	}
-	public void setItemPed(Integer itemPed) {
-		this.itemPed = itemPed;
-	}
-	public Date getDataPed() {
-		return dataPed;
-	}
-	public void setDataPed(Date dataPed) {
-		this.dataPed = dataPed;
-	}
-	public PetShopBandProduto getPetShopBandProduto() {
-		return petShopBandProduto;
-	}
-	public void setPetShopBandProduto(PetShopBandProduto petShopBandProduto) {
-		this.petShopBandProduto = petShopBandProduto;
+	public void setdataped(Date dataped) {
+		this.dataped = dataped;
 	}
 	
 }

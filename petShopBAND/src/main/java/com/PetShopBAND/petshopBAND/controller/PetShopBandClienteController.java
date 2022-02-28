@@ -14,7 +14,7 @@ public class PetShopBandClienteController {
 	
 	@GetMapping("/listaClientes")
 	public List<PetShopBandClienteDto> listaClientes(){
-		PetShopBandCliente cliente = new PetShopBandCliente(null, null, null, null, null);
+		PetShopBandCliente cliente = new PetShopBandCliente();
 		return PetShopBandClienteDto.converter(Arrays.asList(cliente));
 	}
 }

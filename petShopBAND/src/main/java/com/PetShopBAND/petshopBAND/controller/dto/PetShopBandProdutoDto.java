@@ -19,13 +19,13 @@ public class PetShopBandProdutoDto {
 	
 	public PetShopBandProdutoDto(PetShopBandProduto petShopBandProduto) {
 		super();
-		this.idProd = petShopBandProduto.getIdProd();
-		this.nomeProd = petShopBandProduto.getNomeProd();
-		this.fabricanteProd = petShopBandProduto.getFabricanteProd();
-		this.dataValProd = petShopBandProduto.getDataValProd();
-		this.descricaoProduto = petShopBandProduto.getDescricaoProduto();
-		this.valorCustoProduto = petShopBandProduto.getValorCustoProduto();
-		this.valorVendaProduto = petShopBandProduto.getValorVendaProduto();
+		this.idProd = petShopBandProduto.getidprod();
+		this.nomeProd = petShopBandProduto.getnomeprod();
+		this.fabricanteProd = petShopBandProduto.getfabricanteprod();
+		this.dataValProd = petShopBandProduto.getdatavalprod();
+		this.descricaoProduto = petShopBandProduto.getdescricaoproduto();
+		this.valorCustoProduto = petShopBandProduto.getvalorcustoproduto();
+		this.valorVendaProduto = petShopBandProduto.getvalorvendaproduto();
 	}
 
 	public UUID getIdProd() {
