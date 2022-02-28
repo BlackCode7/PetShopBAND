@@ -68,6 +68,7 @@ git push -u origin master
 20 - data 26-02-2022 >>> Sem desenvolvimento
 
 21 - data 28-02-2022 >>> Entendi como funciona o relacionamento com Jpa >>> sempre devo estar dentro da classe que vou jogar pra outra classe onde vou ligar tipo: CLASSE_A para      CLASSE_B = estando na CLASSE_A fazendo @ManyToOne, @JoinColumn(name="id_da_classe_pra_onde_vai") para CLASSE_B
+     commit >>> 8fd1add..ceb3149
 
 
 
