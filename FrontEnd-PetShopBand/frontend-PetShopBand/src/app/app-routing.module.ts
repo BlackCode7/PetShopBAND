@@ -1,10 +1,28 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+ //'@nebular/auth'
 
-const routes: Routes = [];
 
+const routes: Routes = [
+
+  /* Configuração das rotas para as páginas */
+
+  {
+    // Tela inicial da aplicação
+    path: 'app',
+    loadChildren: () => import('./app.module')
+      .then(m => m.AppModule), 
+  }
+
+  // Tela de autenticação da aplicação Auth >>> Login/Register/ResquestPassword/ResetPassword >>> criação dessas telas
+
+];
+
+const config: ExtraOptions = {
+  useHash: false,
+};
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, config)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
