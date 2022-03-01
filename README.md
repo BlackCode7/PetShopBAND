@@ -77,7 +77,16 @@ git push -u origin master
 	https://akveo.github.io/nebular/docs/guides/create-nebular-page#create-nebular-page
 	https://www.npmjs.com/package/eva-icons
 
-23 - ok
+23 - Instalação de nebular
+	https://akveo.github.io/nebular/docs/guides/install-nebular#using-angular-cli
+
+	Create a New Project
+	ng new my-new-project
+	
+	Install Nebular
+	npm install --save @nebular/theme @angular/cdk @angular/animations
+	npm install --save eva-icons @nebular/eva-icons
+
 	
 
 
