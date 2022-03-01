@@ -82,6 +82,8 @@ git push -u origin master
 	https://www.npmjs.com/package/eva-icons
 
 23 - ok
+
+24 - ng generate c auth/login
 	
 
 
