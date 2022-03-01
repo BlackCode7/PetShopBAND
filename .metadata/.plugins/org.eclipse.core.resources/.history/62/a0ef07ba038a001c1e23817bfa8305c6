@@ -1,5 +1,0 @@
-package com.PetShopBAND.petshopBAND.repository;
-
-public interface PetShopBandVendedorRepository {
-
-}
