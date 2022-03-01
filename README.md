@@ -70,7 +70,12 @@ git push -u origin master
 21 - data 28-02-2022 >>> Entendi como funciona o relacionamento com Jpa >>> sempre devo estar dentro da classe que vou jogar pra outra classe onde vou ligar tipo: CLASSE_A para      CLASSE_B = estando na CLASSE_A fazendo @ManyToOne, @JoinColumn(name="id_da_classe_pra_onde_vai") para CLASSE_B
      commit >>> 8fd1add..ceb3149
 
-
+22 - data 01/03/2022 >>> Criado repositório do frot-end com Nebular Ngx-admin  
+	tutorial de apoio:
+	https://www.youtube.com/watch?v=Gw1554hTmu4
+	https://akveo.github.io/ngx-admin/docs/getting-started/installation-guidelines#production-bundle
+	https://akveo.github.io/nebular/docs/guides/create-nebular-page#create-nebular-page
+	
 
 
 
