@@ -75,6 +75,7 @@ git push -u origin master
 	https://www.youtube.com/watch?v=Gw1554hTmu4
 	https://akveo.github.io/ngx-admin/docs/getting-started/installation-guidelines#production-bundle
 	https://akveo.github.io/nebular/docs/guides/create-nebular-page#create-nebular-page
+	https://www.npmjs.com/package/eva-icons
 	
 
 
