@@ -72,9 +72,13 @@ git push -u origin master
 
 22 - data 01/03/2022 >>> Criado repositório do frot-end com Nebular Ngx-admin  
 	tutorial de apoio:
+	
 	https://www.youtube.com/watch?v=Gw1554hTmu4
+	
 	https://akveo.github.io/ngx-admin/docs/getting-started/installation-guidelines#production-bundle
+	
 	https://akveo.github.io/nebular/docs/guides/create-nebular-page#create-nebular-page
+	
 	https://www.npmjs.com/package/eva-icons
 
 23 - ok
