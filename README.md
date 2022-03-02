@@ -117,7 +117,17 @@ git push -u origin master
 
 	 ng generate m auth/register/ 
 	
+25 - 2. If 'app-login' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress 
+		this message.
 
+        <app-login></app-login>
+         ~~~~~~~~~~~
+
+  		src/app/app.component.ts:5:16
+		  
+        templateUrl: './app.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~
+        Error occurs in the template of component AppComponent.
 
 
 
