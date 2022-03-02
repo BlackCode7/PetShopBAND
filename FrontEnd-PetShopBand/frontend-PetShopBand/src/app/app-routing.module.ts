@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
  //'@nebular/auth'
-import { NbAuthComponent } from '@nebular/auth/'
+//import { NbAuthComponent } from '@nebular/auth/'
 
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
 
   {
    path: 'auth',
-   component: NbAuthComponent, 
+   //component: NbAuthComponent, 
    children: []
   }
 
