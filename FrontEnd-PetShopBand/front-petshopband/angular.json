@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontend-PetShopBand": {
+    "front-petshopband": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/frontend-PetShopBand",
+            "outputPath": "dist/front-petshopband",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,8 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/@nebular/theme/styles/prebuilt/dark.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -69,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "frontend-PetShopBand:build"
+            "browserTarget": "front-petshopband:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "frontend-PetShopBand:build:production"
+              "browserTarget": "front-petshopband:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontend-PetShopBand:build"
+            "browserTarget": "front-petshopband:build"
           }
         },
         "test": {
@@ -117,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "frontend-PetShopBand:serve"
+            "devServerTarget": "front-petshopband:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "frontend-PetShopBand:serve:production"
+              "devServerTarget": "front-petshopband:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "frontend-PetShopBand"
+  "defaultProject": "front-petshopband"
 }
