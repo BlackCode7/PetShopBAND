@@ -82,7 +82,7 @@ git push -u origin master
 	https://www.npmjs.com/package/eva-icons
 
 23 - Instalação de nebular
-	https://akveo.github.io/nebular/docs/guides/install-nebular#using-angular-cli
+	https://akveo.github.io/nebular/docs/guides/install-nebular#manually
 
 	Create a New Project
 	ng new my-new-project
