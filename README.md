@@ -88,8 +88,22 @@ git push -u origin master
 	ng new my-new-project
 	
 	Install Nebular
+
+	ng add @nebular/theme
+
 	npm install --save @nebular/theme @angular/cdk @angular/animations
+
 	npm install --save eva-icons @nebular/eva-icons
+
+	### Instalação de modulos do Nebular
+	>>> npm i @nebular/auth
+
+	-------------
+	angular.json
+	-------------
+	"styles": [
+		"node_modules/@nebular/theme/styles/prebuilt/default.css", // or dark.css
+	],
 
 24 - ng generate c auth/login
 
@@ -103,8 +117,6 @@ git push -u origin master
 
 	 ng generate m auth/register/ 
 	
-# Instalação de modulos do Nebular
-	>>> npm i @nebular/auth
 
 
 
