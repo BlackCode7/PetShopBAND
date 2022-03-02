@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
  //'@nebular/auth'
-//import { NbAuthComponent } from '@nebular/auth/'
+
+ /* INSTALAR O NEBULAR >>> tenho que atualizar angular para versão 13 */
+//import { NbAuthComponent } from '@nebular/auth/' 
 
 
 const routes: Routes = [
