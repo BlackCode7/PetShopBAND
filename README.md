@@ -91,11 +91,20 @@ git push -u origin master
 	npm install --save @nebular/theme @angular/cdk @angular/animations
 	npm install --save eva-icons @nebular/eva-icons
 
-23 - ok
-
 24 - ng generate c auth/login
-	
 
+	 ng generate s auth/login/loginservice 
+
+	 ng generate m auth/login
+
+	 ng generate c auth/register
+
+	 ng generate s auth/register/registerservice
+
+	 ng generate m auth/register/ 
+	
+# Instalação de modulos do Nebular
+	>>> npm i @nebular/auth
 
 
 
