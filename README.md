@@ -129,5 +129,7 @@ git push -u origin master
                      ~~~~~~~~~~~~~~~~~~~~~~
         Error occurs in the template of component AppComponent.
 
+		commit >>> 9265859..1e3f0cb
+
 
 
