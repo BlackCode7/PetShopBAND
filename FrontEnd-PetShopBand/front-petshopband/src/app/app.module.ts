@@ -5,10 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbDatepickerModule, 
+         NbMenuModule, NbDialogModule, NbToastrModule, NbWindowModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { LoginModule } from './auth/login/login.module';
 import { RegisterModule } from './auth/register/register.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +19,16 @@ import { RegisterModule } from './auth/register/register.module';
   ],
   schemas: [],
   imports: [
-    NbThemeModule,
+    HttpClientModule,
+    NbSidebarModule.forRoot(),
+
+    NbMenuModule.forRoot(),
+    NbDatepickerModule.forRoot(),
+    NbDialogModule.forRoot(),
+    NbWindowModule.forRoot(),
+    NbToastrModule.forRoot(),
+    
+    NbThemeModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -26,6 +37,10 @@ import { RegisterModule } from './auth/register/register.module';
     NbEvaIconsModule,
     LoginModule,
     RegisterModule
+
+    // Para usar a API do google.maps
+    // NbChatModule.forRoot({ messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY' }),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
