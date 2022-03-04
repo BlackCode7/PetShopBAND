@@ -43,6 +43,6 @@ import { HttpClientModule } from '@angular/common/http';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // Aqui escolho qual componente vai iniciar primeiro
 })
 export class AppModule { }
