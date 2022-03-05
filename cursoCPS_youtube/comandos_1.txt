@@ -1,0 +1,41 @@
+
+aula - 10
+Aula 10 - Adicionando o framework CSS Bootstrap no projeto do Angular. (Sem bibliotecas)
+https://www.youtube.com/watch?v=a6U4Zo4_WuA
+
+instalando Bootstrap >>> npm i bootstrap
+                         npm i jquery
+
+                         # configuraction
+                            "styles": [
+                                "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                                "src/styles.css"                            
+                            ],
+                            "scripts": [
+                                "node_modules/jquery/dist/jquery.min.js",
+                                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+                            ]
+
+aula - 11
+Aula 11 - Inserindo imagens locais em componentes de um projeto Angular.
+https://www.youtube.com/watch?v=CxVO6IBknrQ
+
+aula - 12
+0:07 / 7:52
+Aula 12 - O que são componentes no Angular
+https://www.youtube.com/watch?v=sA39fIBQktA
+
+aula - 13
+Aula 13 - Criação de componentes e elaboração do template da aplicação Angular com Bootstrap
+https://www.youtube.com/watch?v=0PvPXaFT6lY   ---> montando os componentes
+
+aula - 15
+Aula 15 - Como criar e configurar rotas na prática com Angular.
+https://www.youtube.com/watch?v=Zdi71_ny7FU
+
+    ng g c components/produtos/listar-produtos
+    ng g c components/produtos/cadastrar-produto 
+
+aula - 17
+Aula 17 - Criando variáveis com TypeScript no Angular
+https://www.youtube.com/watch?v=Oey8JSVB4Ag

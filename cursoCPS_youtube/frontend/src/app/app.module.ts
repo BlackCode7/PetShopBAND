@@ -13,6 +13,8 @@ import { ListarPedidosComponent } from './components/pedidos/listar-pedidos/list
 import { CadastrarPedidoComponent } from './components/pedidos/cadastrar-pedido/cadastrar-pedido.component';
 import { CadastrarFornecedorComponent } from './components/fornecedores/cadastrar-fornecedor/cadastrar-fornecedor.component';
 import { ListarFornecedoresComponent } from './components/fornecedores/listar-fornecedores/listar-fornecedores.component';
+import { CadastrarClienteComponent } from './components/clientes/cadastrar-cliente/cadastrar-cliente.component';
+import { ListarClientesComponent } from './components/clientes/listar-clientes/listar-clientes.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ListarFornecedoresComponent } from './components/fornecedores/listar-fo
     ListarPedidosComponent,
     CadastrarPedidoComponent,
     CadastrarFornecedorComponent,
-    ListarFornecedoresComponent
+    ListarFornecedoresComponent,
+    CadastrarClienteComponent,
+    ListarClientesComponent
   ],
   imports: [
     BrowserModule,
