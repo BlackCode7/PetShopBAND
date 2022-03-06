@@ -1,19 +1,39 @@
 <h1 style="display:flex; justify-content:center; align-items:center">
     Seja Bem-Vindo ao PetShopBand!
 </h1>
-<div class="row " >
-    <div class="col">     
-        
-        <!--
 
+<h4 class="text-danger">{{anuncio}}</h4>    
+<div class="card" style="width: 18rem;">
+    <img [src]="" class="card-img-top" alt="..."> 
+    <div class="card-body">
+        <h5 class="card-title">
+            {{ nomeProduto | uppercase }} <!--Uso do Pipe do Angular-->
+            <span *ngIf="promocao; else elseBlock" class="badge badge-success">
+                Promoção
+            </span>
+            <ng-template #elseBlock>
+                <span class="badge badge-primary">Aproveite</span>
+            </ng-template>
+        </h5>
+        <p class="card-text">
+            Identificação: {{ idProduto | number: '2.0-2' }}
+            Validade: {{ dataValida | date: 'shortDate' }}<!--'shortDate'-->
+        </p><!--Pipe-->
+        <a href="#" class="btn btn-primary float-right"> {{ precoProduto | currency: 'BRL' : 'symbol' : '1.2-3' }}</a><!--Pipe-->
+    </div>    
+</div>
+
+<div class="row ">
+    <div class="col">          
+        <!--
             COLOCAR UMA IMAGEM COM RECOTES DE TODOS OS TIPOS DE PETS EXISTENTES
             E COLAR TUDO NESTA IMAGEM QUE VAI APARECER AQUI NA HOME PAGE DO SISTEMA
-
-        -->
-        
+        -->        
         <img class="img-fluid" src="assets/images/lulinha.png" alt="">             
     </div>
 </div>
+
+
 
 <!--Fundo background-color:rgb(202, 241, 241)-->
         <!-- <div style="width:1350px; height:700px; background-color:rgb(202, 241, 241)" class="responsive">

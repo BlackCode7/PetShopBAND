@@ -16,6 +16,12 @@ import { ListarFornecedoresComponent } from './components/fornecedores/listar-fo
 import { CadastrarClienteComponent } from './components/clientes/cadastrar-cliente/cadastrar-cliente.component';
 import { ListarClientesComponent } from './components/clientes/listar-clientes/listar-clientes.component';
 
+import { LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +42,9 @@ import { ListarClientesComponent } from './components/clientes/listar-clientes/l
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt-BR'},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -39,3 +39,42 @@ https://www.youtube.com/watch?v=Zdi71_ny7FU
 aula - 17
 Aula 17 - Criando variáveis com TypeScript no Angular
 https://www.youtube.com/watch?v=Oey8JSVB4Ag
+
+aula - 19 #########################################
+Aula 19 - Formatando variáveis com PIPES no Angular >>> API para consulta dos pipes angular >>> https://angular.io/api?type=pipe
+https://www.youtube.com/watch?v=p1q8X_0RO0s
+
+    Usado para formatar variáveis com PIPES no Angular
+
+    app.module.ts
+    import { LOCALE_ID } from '@angular/core';
+    import localePt from '@angular/common/locales/pt';
+    import { registerLocaleData } from '@angular/common';
+
+    registerLocaleData(localePt);
+
+    providers: [
+        { provide: LOCALE_ID, useValue: 'pt-BR'},
+    ],
+
+    ###################################################
+    ---------------------------------------------------
+        <h4 class="text-danger">{{anuncio}}</h4>    
+        <div class="card" style="width: 18rem;">
+            <img [src]="" class="card-img-top" alt="..."> 
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ nomeProduto | uppercase }} <!--Uso do Pipe do Angular-->
+                    <span *ngIf="promocao; else elseBlock" class="badge badge-success">
+                        Promoção
+                    </span>
+                    <ng-template #elseBlock>
+                        <span class="badge badge-primary">Aproveite</span>
+                    </ng-template>
+                </h5>
+                <p class="card-text">Identificação: {{ idProduto }}</p>
+                <a href="#" class="btn btn-primary float-right">R$ {{ precoProduto | number: `2.0-2`}}</a><!--Pipe-->
+            </div>    
+        </div>
+    ---------------------------------------------------
+    ###################################################

@@ -12,11 +12,13 @@ export class HomeComponent implements OnInit {
   public anuncio: string = ` o ${this.nomeProduto} esta em promoção`;
 
   // Variável do tipo number
-  public idProduto: number = 123;
+  public idProduto: number = 1;
   public precoProduto: number = 12.00;
 
   // Variável do tipo boolean
   public promocao: boolean = true; // true ou false
+
+  public dataValida: any = '2022/02/01';
 
   constructor() { 
     //Variável de string com concatenação
