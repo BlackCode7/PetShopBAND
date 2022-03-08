@@ -128,6 +128,15 @@ git push -u origin master
         templateUrl: './app.component.html',
                      ~~~~~~~~~~~~~~~~~~~~~~
         Error occurs in the template of component AppComponent.
+	
+26 - Data 07/03/2022 - Repositório refeito do zero juntamente com os seus componentes, também foram refeitas todas as rotas da aplicação
+	aula de referência usada - Aula_13 - Criação de componentes e elaboração do template da aplicação Angular com Bootstrap
+	https://www.youtube.com/watch?v=0PvPXaFT6lY
+	
+	commit ---> 41e71ca..9fe1b71  
+	branch de trabalho ---> work_branch
+	branch que substitui a branch main ---> PetShopBrach  	 
+	
 
 
 
