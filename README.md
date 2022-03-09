@@ -136,7 +136,10 @@ git push -u origin master
 	commit ---> 41e71ca..9fe1b71  
 	branch de trabalho ---> work_branch
 	branch que substitui a branch main ---> PetShopBrach  	 
-	
+
+27 - Data 09/03/2022 - Entendendo o comportamento do OneWay data bind do angular - revisão de conceitos com interpolação de variáveis
+	Aula 18 - Data Binding (Interpolation e Property)
+
 
 
 
