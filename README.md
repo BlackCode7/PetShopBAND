@@ -139,6 +139,13 @@ git push -u origin master
 
 27 - Data 09/03/2022 - Entendendo o comportamento do OneWay data bind do angular - revisão de conceitos com interpolação de variáveis
 	Aula 18 - Data Binding (Interpolation e Property)
+	
+28 - Data 10/03/2022 - Instalação do font-awesome e criação de tabelas de todas as telas de listagem
+	aula - 20
+	Aula 20 - Elaboração da interface de Listar Produtos
+	https://www.youtube.com/watch?v=1u4sCpM-jp8
+	
+	commit >>> df9fed2..b0f77f9
 
 
 
