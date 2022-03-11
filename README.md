@@ -147,6 +147,10 @@ git push -u origin master
 	
 	commit >>> df9fed2..b0f77f9
 
-
+29 - Data 11/03/2022 - Construção das tabelas nas telas de listagem dos componentes e manipulação de Array de objetos
+	Aula 21 - Arrays, Objetos, for e ngFor no Angular.
+	https://www.youtube.com/watch?v=7j8q6uPZt_8&t=11s
+	
+	commit >>> 6bf184e3aafc215b8d6deaecf1d79cc0f5dfe429
 
 
