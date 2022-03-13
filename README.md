@@ -152,5 +152,17 @@ git push -u origin master
 	https://www.youtube.com/watch?v=7j8q6uPZt_8&t=11s
 	
 	commit >>> 6bf184e3aafc215b8d6deaecf1d79cc0f5dfe429
+	
+30 - Data 13/03/2022
+	
+	aula - 23 - Data bindings - Two way e event
+	
+	Commit: 54deadfe157af9ce8b3d0330f8e1d42776e0c836
+	Parents: 25e91b938a62901651067c5675948ed94fe7cfb7
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sun Mar 13 2022 11:01:40 GMT-0300 (Horário Padrão de Brasília) 
+
+	configuração de ngModel e ToWay DataBind
 
 
