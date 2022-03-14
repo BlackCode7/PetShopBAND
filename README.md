@@ -165,4 +165,13 @@ git push -u origin master
 
 	configuração de ngModel e ToWay DataBind
 
+31 - Data 14/03/2022
+	Commit: 92baa8f8a2d990cf0c7e6ccdf4b61ce5cb4502fe
+	Parents: d65878e8632522cbb8ac3a40bb4749c61d255979
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sun Mar 13 2022 15:12:24 GMT-0300 (Horário Padrão de Brasília) 
+
+	Atualizando a branch PetShopBand
+
 
