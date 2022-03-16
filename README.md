@@ -183,4 +183,13 @@ git push -u origin master
 
 	Adicionando models e services
 
+33 - Data 16/03/2022
+	Commit: b6e26e9708b49e84f751abde7d977806763f5277
+	Parents: 7468a9b2641bbea08622e125f067c159324f9143
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Wed Mar 16 2022 07:08:03 GMT-0300 (Horário Padrão de Brasília) 
+
+	Adicionando o service e fazendo a conexão do service com o componente ts e exibindo na listagem de produtos
+
 
