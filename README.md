@@ -191,5 +191,17 @@ git push -u origin master
 	Date: Wed Mar 16 2022 07:08:03 GMT-0300 (Horário Padrão de Brasília) 
 
 	Adicionando o service e fazendo a conexão do service com o componente ts e exibindo na listagem de produtos
+	
+34 - Data 17/03/2022
+	Commit: af05fe412732c2db491e9abdc89b1088fc838ab2
+	Parents: 1f0e9a68452837871c3c62405180318bd9747756, f4eb98820586f88608c5394e8a40aa9d3c70f7a9
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Thu Mar 17 2022 06:44:01 GMT-0300 (Horário Padrão de Brasília) 
+
+	referência: https://www.youtube.com/watch?v=s-fLJp9vJIY
+
+	Merge branch 'main' of https://github.com/BlackCode7/petshopband-1_angular into PetShopBand
+	Atualizando o repositório
 
 
