@@ -203,5 +203,14 @@ git push -u origin master
 
 	Merge branch 'main' of https://github.com/BlackCode7/petshopband-1_angular into PetShopBand
 	Atualizando o repositório
+	
+35 - Data 19/03/2022
+	Commit: b6840bcd81bc1ee5d78edccc74015ab6d6e56133
+	Parents: 94302d8a50c64a1cd92d874934f42d3074314f33
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sat Mar 19 2022 18:11:14 GMT-0300 (Horário Padrão de Brasília) 
+
+	Criação de model dto de IPedido
 
 
