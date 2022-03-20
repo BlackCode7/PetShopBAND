@@ -213,4 +213,13 @@ git push -u origin master
 
 	Criação de model dto de IPedido
 
+36 - Data 20-03-2022
+	Commit: 5bb708a1e0d3f9c0bdc8b48a5fbe158b3b024ea9
+	Parents: 467703197cb55fcc6192a7fe20ee041714a30fe3
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sun Mar 20 2022 13:25:22 GMT-0300 (Horário Padrão de Brasília) 
+
+	criação do auth guard - criação do service auth guard - criação do service usuarios - inclusão de comandos no readme para criação do guard
+
 
