@@ -222,4 +222,11 @@ git push -u origin master
 
 	criação do auth guard - criação do service auth guard - criação do service usuarios - inclusão de comandos no readme para criação do guard
 
+37 - Data 22/03/2022
+	Commit: ca5767e69f7869b526e8b0548d242447a6dd5664
+	Parents: 5bb708a1e0d3f9c0bdc8b48a5fbe158b3b024ea9
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Tue Mar 22 2022 21:32:02 GMT-0300 (Horário Padrão de Brasília) 
 
+	instalação do lib ngx-toastr para exibição de mensagens de erro do usuário
