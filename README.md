@@ -230,3 +230,20 @@ git push -u origin master
 	Date: Tue Mar 22 2022 21:32:02 GMT-0300 (Horário Padrão de Brasília) 
 
 	instalação do lib ngx-toastr para exibição de mensagens de erro do usuário
+
+38 - Data 25/03/2022
+	Commit: 6d66ebb27e586c68116536c44a08ad04892359d0
+	Parents: ca5767e69f7869b526e8b0548d242447a6dd5664
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Fri Mar 25 2022 06:19:47 GMT-0300 (Horário Padrão de Brasília) 
+
+	1 - Acrescentando metodo post em produtos / 
+	2 - colocando o campo Id como opcional em model ts / 
+	3 - metodo para buscar produto na listagem de produtos 	component ts / 
+	4 - acrescentando campo promoção e quantidade na tela de listagem produtos / 
+	5 - componente cadastrar produto ajuste dos nomes das variáveis / 
+	6 - chamada do service no construtor / 
+	7 - chamando o metodo para buscar todos os produtos e redirecionar para outra rota / 
+	8 - exibindo mensagem em caso de sucesso ou falha / 
+	9 - Ajuste das variáveis no componente html de cadastro produtos e inclusão de dois campos quantidade e promoção.
