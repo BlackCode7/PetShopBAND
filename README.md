@@ -247,3 +247,33 @@ git push -u origin master
 	7 - chamando o metodo para buscar todos os produtos e redirecionar para outra rota / 
 	8 - exibindo mensagem em caso de sucesso ou falha / 
 	9 - Ajuste das variáveis no componente html de cadastro produtos e inclusão de dois campos quantidade e promoção.
+
+39 - Data 26/03/2022
+	Commit: 382fc58ce2203c2cbb19777288a75bbb4d9c4428
+	Parents: 5c734729f6abbea87842f0f6064238cba6311806
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Fri Mar 25 2022 08:17:55 GMT-0300 (Horário Padrão de Brasília) 
+	Inclusão de campos na tela de cadastro de produtos e modificação do campo promoção para campo checkbox
+
+	Commit: edfce7f897b7bb1eeb6eb0ff8e1ac19ea543b94c
+	Parents: e290144d099bfa575b34f169e4e359b064c654a3
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sat Mar 26 2022 06:21:34 GMT-0300 (Horário Padrão de Brasília) 
+	ajustes de todos os campos de IProduto, ajuste do campo promoção na tela de cadastro de produtos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
