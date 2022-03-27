@@ -263,8 +263,71 @@ git push -u origin master
 	Date: Sat Mar 26 2022 06:21:34 GMT-0300 (Horário Padrão de Brasília) 
 	ajustes de todos os campos de IProduto, ajuste do campo promoção na tela de cadastro de produtos
 
+40 - Data 26/03/2022
 
+	Commit: 8f96b07cee0133dba4011b18b77a0ffa3e569315
+	Parents: edfce7f897b7bb1eeb6eb0ff8e1ac19ea543b94c
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sat Mar 26 2022 11:02:47 GMT-0300 (Horário Padrão de Brasília) 
+	1 - Criando método post para cadastro de clientes em service
+	2 - Criando Método CadastrarClientesPost no component ts
+	3 - Criando método para exibir mensagem de erro em caso de sucesso ou falalha na hora de salvar um cliente
+	4 - Ajustando o id nos campos onde exitem idCliente, que não estavam salvando no banco
+	5 - Criando uma instancia de routers para redirecionar o usuário para página de listagem de clientes
+	6 - Ajuste do arquivo model de ICliente no campo idCliente para id
+	
+	Commit: edfce7f897b7bb1eeb6eb0ff8e1ac19ea543b94c
+	Parents: e290144d099bfa575b34f169e4e359b064c654a3
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sat Mar 26 2022 06:21:34 GMT-0300 (Horário Padrão de Brasília) 
+	ajustes de todos os campos de IProduto, ajuste do campo promoção na tela de cadastro de produtos
+	
+	Commit: 3a167f692417e62f43f04f0c94aaffeb7bd728e7
+	Parents: 8f96b07cee0133dba4011b18b77a0ffa3e569315
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sat Mar 26 2022 11:09:31 GMT-0300 (Horário Padrão de Brasília) 
+	Ajuste da interface model de ICliente
+	
+	Commit: 0bc5af2bc492560fdb0a8b79fe79da196de9fded
+	Parents: 3a167f692417e62f43f04f0c94aaffeb7bd728e7
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sat Mar 26 2022 12:44:51 GMT-0300 (Horário Padrão de Brasília) 
 
+	1 - Ajuste do campo idFornecedor para id
+	2 - Ajustes dos campos da tela de cadastro de fornecedores
+	3 - Inclusão de variáveis, inclusão de variáveis no construtor, criação do método para salvar fornecedores cadastrados
+	4 - Ajuste no método de listagem de fornecedores no component ts de buscarFornecedores() para buscarFornecedoresGet()
+	5 - Ajuste do campo id em model IFornecedor
+	6 - Modificando o metodo buscarFornecedoresGet para exibir mensagem de erro ou sucesso - implementando método para cadastrar fornecedores e configuração para 		  exibição de mensagem de erro - intalação da lib toastr
+	7 - inclusão de uma string no método assert em produtos service.ts
+	
+
+41 - Data 27/03/2022
+
+	Commit: 136e1078ae8020b5dda57230c0f6dc8c90eff79f
+	Parents: 0bc5af2bc492560fdb0a8b79fe79da196de9fded
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sun Mar 27 2022 11:15:05 GMT-0300 (Horário Padrão de Brasília) 
+	produtos service esta ok
+	
+	Commit: 9f2cefe0c268d2737389482a4eb39aadfd01700a
+	Parents: 136e1078ae8020b5dda57230c0f6dc8c90eff79f
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Sun Mar 27 2022 11:45:24 GMT-0300 (Horário Padrão de Brasília) 
+	1 - pedidos service - acrecentando método de salvar cliente e método para exibir mensagem de erro ou sucesso
+	2 - Ajuste do campo id em model IPedido e acrecentando campo endereço do cliente
+	3 - Limpando comentários do arquivo listar pedidos ts
+	4 - Retirando campos idPedido, idCliente, idFornecedor, idProduto do componente html de listar pedidos
+	5 - Ajuste de id em cadastrar fornecedore.ts
+	6 - Ajuste dos campos eem cadastrar-pedido.html
+	7 - implementação do método salvarPedido em cadastrar pedido ts, imports de IFornecedores, IClientes, IProdutos
+	
 
 
 
