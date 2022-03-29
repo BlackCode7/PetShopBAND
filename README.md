@@ -1,6 +1,6 @@
-"# PetShopBand" 
+# PetShopBand
 
-# KanBan do projeto PetShopBand
+## KanBan do projeto PetShopBand
 https://github.com/users/BlackCode7/projects/3
 
 …or create a new repository on the command line
