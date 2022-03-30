@@ -329,9 +329,20 @@ git push -u origin master
 	4 - Incluindo uma rota na tela de listar produtos com referência no id do produto
 	5 - Criando duas funções no service de produtos uma para pegar os dados do produto por id buscarProdutosIDGet() e a segunda função para salvar os dados 	    alterados cadastrarProdutosPut()
 
+43 - Data 29/03/2022
 
-
-
+	Commit: df760f1a61215f2be5c9bc87973e102d6eae54b0
+	Parents: 5f38b6fd1caed743f6c109a68e5d1b88a97cd182
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Tue Mar 29 2022 20:57:25 GMT-0300 (Horário Padrão de Brasília) 
+	1 - organizando função com mensagem de erro
+	2 - Acrecentando novos campos em cadastro de pedidos html
+	3 - adicionando funções para atualização dos campos metodo PUT
+	4 - Adiconando rotas em listagem de pedidos
+	5 - Organizando a função de cadastrarProdutoPut();
+	6 - Ajustando a rota de cadastrar pedidos em header.html
+	7 - implementando métodos de atualização de pedidos em pedidos service.ts
 
 
 
