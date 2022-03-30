@@ -344,7 +344,8 @@ git push -u origin master
 	6 - Ajustando a rota de cadastrar pedidos em header.html
 	7 - implementando métodos de atualização de pedidos em pedidos service.ts
 
-
+44 - Data 30/03/2022
+	Sem desenvolvimento
 
 
 
