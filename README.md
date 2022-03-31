@@ -347,5 +347,16 @@ git push -u origin master
 44 - Data 30/03/2022
 	Sem desenvolvimento
 
+45 - Data 31/03/2022
+
+	Commit: 3fa1d631b218131d231f8c641b80612f52e6186d
+	Parents: 2d080b4522649e4bfc4a6f7060abd9bf256788d2
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Thu Mar 31 2022 20:47:22 GMT-0300 (Horário Padrão de Brasília)
+	1 - inclusão de botão delete em componente html
+	2 - inclusão do método deletar() em componente ts
+	3 - inlcusão do método excluir() no componente service ts
+
 
 
