@@ -358,5 +358,10 @@ git push -u origin master
 	2 - inclusão do método deletar() em componente ts
 	3 - inlcusão do método excluir() no componente service ts
 
+44 - Data 01/04/2022
+	Sem desenvolvimento
+
+44 - Data 02/04/2022
+	Sem desenvolvimento
 
 
