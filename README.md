@@ -363,5 +363,15 @@ git push -u origin master
 
 44 - Data 02/04/2022
 	Sem desenvolvimento
+	
+45 - Data 05/03/2022
+
+	Commit: e7a5081c3af765a07e5f7fb9d6776b13dd97a965
+	Parents: 82aa4a224895ac617181eb8a51a22be2c3107ac3
+	Author: Anderson <BlackCode7@outlook.com>
+	Committer: Anderson <BlackCode7@outlook.com>
+	Date: Tue Apr 05 2022 20:43:25 GMT-0300 (Horário Padrão de Brasília) 
+
+	Nos card-produtos é necessário melhorar, trazendo as imagens pra dentro dos cards e exibir na página principal
 
 
