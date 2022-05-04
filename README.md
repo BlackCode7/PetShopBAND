@@ -387,4 +387,10 @@ git push -u origin master
 47 - Data 01/05/2022
 
 	Recriei o banco de dados Postgres com o nome  de PetShopBand
+	
+48 - Data 03/05/2022
+	
+	Tentativa de criação do método post no backend
+	retorno do erro
+	zone.js:2680 GET http://localhost:4200/api/produtos/0 404 (Not Found)
 
